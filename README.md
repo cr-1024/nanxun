@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nxweb
 
 > Nuxt.js project
@@ -20,3 +21,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+=======
+# nanxun
+基于Nuxt.js制作的招聘网站
+>>>>>>> 998fe88483eecc5ce71d4aaed814cdb72e93b108
