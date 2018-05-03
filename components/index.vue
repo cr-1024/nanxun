@@ -69,7 +69,7 @@
 
 <style lang="scss">
 
-@import url('//at.alicdn.com/t/font_631781_amje65w58wdpwrk9.css');
+@import url('//at.alicdn.com/t/font_631781_4y9vw3re3wmf5hfr.css');
 $nx-color:#449EFE;
 $all-padding:0;
 $nx-width:76.25rem;
@@ -81,12 +81,7 @@ $nx-width:76.25rem;
   float:right;
   padding-right: $all-padding;
 }
-.iconfont{
-  float:left;
-  line-height: 2rem;
-  font-size: 1.3rem;
-  color:$nx-color;
-}
+
 #headTop{
   width: 100%;
   height: 2.2rem;
@@ -98,6 +93,12 @@ $nx-width:76.25rem;
     margin: 0 auto;
     ul {
       height:100%;
+      .iconfont{
+        float:left;
+        line-height: 2rem;
+        font-size: 1.3rem;
+        color:$nx-color;
+      }
       li{
         float: left;
         height:100%;
@@ -123,6 +124,7 @@ $nx-width:76.25rem;
   // padding: $all-padding;
   background-color:#fff;
   border-bottom:1px solid #ddd;
+  overflow: hidden;
   .contains{
     width: 76.25rem;
     height: 100%;
@@ -149,7 +151,7 @@ $nx-width:76.25rem;
         float: left;
         font-size:20px;
         margin:20px;
-        padding:0 6px 12px;
+        padding:0 6px 11px;
         &.now,&:hover{
           border-bottom: 2px solid #3CBEF9;
         }

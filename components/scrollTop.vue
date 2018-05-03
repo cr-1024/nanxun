@@ -45,17 +45,19 @@ import Vue from 'vue'
 
 <style lang="scss">
 
-@import url('//at.alicdn.com/t/font_631781_amje65w58wdpwrk9.css');
+@import url('//at.alicdn.com/t/font_631781_4v61w1yz6y74x6r.css');
 $nx-color:#449EFE;
 	.scrollTop{
 		display: none;
 		position: fixed;
 		width: 4rem;
 		height: 4rem;
-		right: 2rem;
-		bottom: 10rem;
+		right: 1rem;
+		bottom: 5rem;
 		border: 1px solid #ddd;
 		border-radius: 2rem;
+		background-color: #fff;
+		z-index: 9999999;
 		.iconfont{
 			display: inline-block;
 			width: 100%;

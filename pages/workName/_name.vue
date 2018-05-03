@@ -5,7 +5,7 @@
 		<Search :nxw="sWidth" :slist="list" :searchValue="$route.params.name" :class="{see:wSearch}" />
 		<div class="nameContains" >
 			<div class="ad"  v-if="!wSearch">
-				<Address :web="dataAddressWeb" />
+				<Address :web="dataAddressWeb" :searchwork="$route.params.name" />
 			</div>
 			<ul class="adImg2" v-if="!wSearch" >
 				<li v-for="(image,index) in imglist" :key="index"><img :src="image" ></li>

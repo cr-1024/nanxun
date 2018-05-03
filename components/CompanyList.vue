@@ -4,13 +4,13 @@
 			<li v-for="(company,index) in companys" :key="index" class="companylist">
 				<div>
 					<div class="hotCompany_Up " >
-						<nuxt-link :to="{name:'index'}"><img :src="company.companyImg" alt=""></nuxt-link>
-						<nuxt-link :to="{name:'index'}" class="companyName">{{company.companyName}}</nuxt-link>
+						<nuxt-link :to="{name:'company-companyEg'}"><img :src="company.companyImg" alt=""></nuxt-link>
+						<nuxt-link :to="{name:'company-companyEg'}" class="companyName">{{company.companyName}}</nuxt-link>
 						<span v-for="(tags,index) in company.companyTags" :key="index" class="tags">{{tags}}<i v-if="index!=company.companyTags.length-1"> / </i></span>
 						<p class="ref">{{company.companyRef}}</p>
 					</div>
 					<div class="hotCompany_Down">
-						<nuxt-link :to="{name:'index'}"  class="dataCompany" v-for="(data,index) in company.companyData.data" :key="index">	
+						<nuxt-link :to="{name:'company-companyEg'}"  class="dataCompany" v-for="(data,index) in company.companyData.data" :key="index">	
 							<p><span>{{data.dataCount}}</span></p>
 							<p>{{data.dataName}}</p>
 						</nuxt-link>

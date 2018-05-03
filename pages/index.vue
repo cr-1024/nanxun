@@ -58,7 +58,7 @@ export default {
 
 <style lang='scss'>
 
-@import url('//at.alicdn.com/t/font_631781_gmxh40gpv8kf0f6r.css');
+@import url('//at.alicdn.com/t/font_631781_4v61w1yz6y74x6r.css');
 $nx-color:#0470B8;
 $all-padding:0;
 $nx-width:76.25rem;

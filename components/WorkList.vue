@@ -73,10 +73,11 @@ $nx-width:75rem;
 				.cardWork_Up{
 					color: #999;
 					.card_workNT{
-						display: inline-block;						
+						display: inline-block;					
 						font-weight: 400;
 						.card_workName{
-							width: 8rem;
+							float: left;
+							max-width: 12rem;
 							font-size: 1rem;
 							text-overflow: ellipsis;
 							overflow: hidden;
@@ -87,7 +88,6 @@ $nx-width:75rem;
 						}
 						.card_workTime{
 							font-size: 0.8rem;
-							
 						}
 					}					
 					.card_workMoney{

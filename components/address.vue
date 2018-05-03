@@ -1,6 +1,6 @@
 <template>
 	<div class="address">
-		<div class="addressContain" id="list" >
+		<div class="addressContain" id="list" >{{searchwork}}
 			<div v-for="(List,index1) in addressList" :key="index1" class="listSort" >
 				<strong>{{List.list}}:</strong>
 				<span @click="add($event)"  v-for="(ad,index2) in List.main" :key="index2" ref="listsort"  >{{ad}}</span>
@@ -19,7 +19,7 @@ export default{
 		}
 
 	},
-	props:['web'],
+	props:['web','searchwork'],
 	created(){
 			
 			axios.get(this.web)
@@ -78,6 +78,7 @@ export default{
 		clear: both;
 		.addressContain{
 			width:60rem;
+			margin-top: 2rem;
 			border:1px solid #ddd; 
 			padding: 0.5rem 1rem;
 			.listSort{

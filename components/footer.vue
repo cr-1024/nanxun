@@ -24,6 +24,7 @@
 </script>
 
 <style lang="scss">
+
 $nx-color3:#62b7f3;
 $nx-color4:#0f46a0;
 	.footer{
