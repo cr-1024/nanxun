@@ -1,6 +1,6 @@
 <template>
 	<div class="address">
-		<div class="addressContain" id="list" >{{searchwork}}
+		<div class="addressContain" id="list" >
 			<div v-for="(List,index1) in addressList" :key="index1" class="listSort" >
 				<strong>{{List.list}}:</strong>
 				<span @click="add($event)"  v-for="(ad,index2) in List.main" :key="index2" ref="listsort"  >{{ad}}</span>

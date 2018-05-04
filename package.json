@@ -13,14 +13,17 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "ajv": "^6.4.0",
     "axios": "^0.18.0",
     "css-loader": "^0.28.11",
     "element-ui": "^2.3.4",
+    "i": "^0.3.6",
     "node-sass": "^4.8.3",
     "nuxt": "^1.0.0",
     "postcss-loader": "^2.1.4",
     "sass-loader": "^7.0.1",
-    "style-loader": "^0.20.3"
+    "style-loader": "^0.20.3",
+    "vue-amap": "^0.5.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

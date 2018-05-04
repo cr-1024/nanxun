@@ -8,13 +8,17 @@
 	          <li v-if="myFlag"><nuxt-link :to="{name:'index'}">&nbsp;&nbsp;进入企业版</nuxt-link></li>
 	          <li v-else ><nuxt-link :to="{name:'index'}">&nbsp;&nbsp;进入求职版</nuxt-link></li>
 	        </ul>
-	        <ul class="right">
+	        <ul class="right" v-if="login">
 	          <li><nuxt-link :to="{name:'index'}">消息&nbsp;&nbsp;|&nbsp;&nbsp;</nuxt-link></li>
 	          <li><nuxt-link :to="{name:'index'}">我的简历&nbsp;&nbsp;|&nbsp;&nbsp;</nuxt-link></li>
 	          <li><nuxt-link :to="{name:'index'}">投递箱&nbsp;&nbsp;|&nbsp;&nbsp;</nuxt-link></li>
 	          <li><nuxt-link :to="{name:'index'}">收藏夹&nbsp;&nbsp;|&nbsp;&nbsp;</nuxt-link></li>
 	          <li><nuxt-link :to="{name:'index'}">四爷</nuxt-link></li>
 	        </ul>
+          <ul class="right" v-else>
+            <li><nuxt-link :to="{name:'index'}">登录&nbsp;&nbsp;|&nbsp;&nbsp;</nuxt-link></li>
+            <li><nuxt-link :to="{name:'index'}">注册</nuxt-link></li>
+          </ul>
 	      </div>
 	      
 	    </div>
@@ -41,6 +45,7 @@
 		data(){
 			return {
          myFlag:true,
+         login:false,
          num:0,
          isone:false,
          istwo:false,
@@ -69,7 +74,7 @@
 
 <style lang="scss">
 
-@import url('//at.alicdn.com/t/font_631781_4y9vw3re3wmf5hfr.css');
+@import url('//at.alicdn.com/t/font_631781_uzwcwz6vcmcxr.css');
 $nx-color:#449EFE;
 $all-padding:0;
 $nx-width:76.25rem;

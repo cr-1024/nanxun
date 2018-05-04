@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Top  :isNow="2"/>
+		<Top :isnow="2"/>
 		<Company />
 		<Footer />
 	</div>

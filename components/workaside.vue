@@ -43,7 +43,7 @@ import axios from 'axios'
 </script>
 
 <style lang="scss">
-@import url('//at.alicdn.com/t/font_631781_4v61w1yz6y74x6r.css');
+@import url('//at.alicdn.com/t/font_631781_uzwcwz6vcmcxr.css');
 	.workaside{
 		padding-top:5rem;
 		padding-left:1.4rem; 

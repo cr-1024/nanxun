@@ -14,12 +14,12 @@
 					<div class="right_btn">投个简历</div>
 				</div>
 				<div class="resume">
-					<div class="left_res"><span><i class="iconfont icon-iconfontmingpian"></i>完成在线简历</span></div>
-					<div class="right_res"><span><i class="iconfont icon-attachment"></i>上传附件简历</span></div>
+					<div class="left_res"><i class="iconfont icon-iconfontmingpian"></i><span>完成在线简历</span></div>
+					<div class="right_res"><i class="iconfont icon-attachment"></i><span>上传附件简历</span></div>
 				</div>
 				<div class="golink">
-					<i class="iconfont icon-jubao" title="举报"></i>
-					<i class="iconfont icon-wechatshare" title="分享到微信"></i>
+					<i class="iconfont icon-jubao" title="举报"></i><em></em>
+					<i class="iconfont icon-wechatshare" title="分享到微信"></i><em></em>
 					<i class="iconfont icon-xiaochengxu" title="微信扫一扫，打开小程序分享"></i>
 				</div>
 			</div>
@@ -45,7 +45,7 @@ import axios from 'axios'
 </script>
 
 <style lang="scss">
-@import url("//at.alicdn.com/t/font_631781_4y9vw3re3wmf5hfr.css");
+@import url("//at.alicdn.com/t/font_631781_uzwcwz6vcmcxr.css");
 $nx-width:68rem;
 $nx-color2:#0470B8;
 	.workHead{
@@ -132,13 +132,20 @@ $nx-color2:#0470B8;
 				}
 				.resume{
 					margin-top: 1rem;
+					position: relative;
 					>div{
 						display: inline-block;
 						font-size: 0.9rem;
 						color: #555;
-						text-decoration: underline;
 						cursor: pointer;
+						position: relative;
+						span{
+							text-decoration: underline;
+						}
 						.iconfont{
+							position: absolute;
+							left:-1.6rem;
+							text-decoration: none;
 							margin-top: -0.3rem;
 							font-size: 1.4rem;
 							color: #999;
@@ -146,10 +153,14 @@ $nx-color2:#0470B8;
 						}
 					}
 					.right_res{
-						float: right;
+						display: inline-block;
+						position: absolute;
+						right: 0;
+						top:0.16rem;
 					}
 				}
 				.golink{
+					position: relative;
 					margin-top: 0.6rem;
 					float: right;
 					.iconfont{
@@ -157,12 +168,14 @@ $nx-color2:#0470B8;
 						font-size: 1.4rem;
 						line-height: 0.5rem;
 						padding:0.6rem;
-						border-right: 1px solid #ddd;
 						cursor: pointer;
-						&:last-of-type{
-							padding-right: 0;
-							border-right: none;
-						} 
+					}
+					em{
+						position: absolute;
+						width: 1px;
+						height: 1rem;
+						top:0.1rem;
+						background-color: #ddd;
 					}
 				}
 			}

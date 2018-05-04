@@ -48,6 +48,7 @@ $nx-width:68rem;
 			.aside{
 				display: inline-block;
 				position: absolute;
+				width: calc(100% - 45.25rem);
 			}
 		}
 		

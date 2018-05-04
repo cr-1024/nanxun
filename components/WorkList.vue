@@ -16,7 +16,7 @@
 					<div class="cardWork_Down">
 						<nuxt-link :to="{name:'index'}" class="card_workImg"><img :src="work.workImg"></nuxt-link>
 						<div>
-							<span><nuxt-link :to="{name:'index'}" class="card_workInc">{{work.workInc}}</nuxt-link></span>
+							<span><nuxt-link :to="{name:'company-companyEg'}" class="card_workInc">{{work.workInc}}</nuxt-link></span>
 							<ul>
 								<li v-for="(incTags,index) in work.workIncTags" :key="index" class="card_workIncTags">{{incTags}}<i v-if="index!=work.workIncTags.length-1"> / </i></li>
 							</ul>

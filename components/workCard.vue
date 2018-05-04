@@ -3,18 +3,18 @@
 		<div class="nodata" v-if="worklist=='暂无数据'">
 			<p>{{worklist}}</p>
 		</div>
-		<div class="workCard" v-for="(work,index) in worklist" :key="index" v-if="worklist!='暂无数据'" >
+		<div class="workCard" v-for="(work,index) in worklist" :key="index" v-if="worklist!='暂无数据'&&(index<20)" >
 				<div class="card_Up">
 					<div class="crad_left">
 						<div>
-							<span class="bluec">{{work.wName}}</span>
+							<nuxt-link :to="{name:'workName-workEg'}"><span class="bluec">{{work.wName}}</span></nuxt-link>
 							<span class="redc">{{work.wMoney}}</span>
 							<span class="grayc">{{work.wTime}}</span>
 						</div>
 						<p class="blackc">{{work.wTags}}</p>
 					</div>
 					<div class="crad_right">
-						<p class="bluec">{{work.cName}}</p>
+						<nuxt-link :to="{name:'company-companyEg'}"><p class="bluec">{{work.cName}}</p></nuxt-link>
 						<p class="blackc">{{work.cTags}}</p>
 						<img :src="work.cImg">
 					</div>
@@ -71,6 +71,7 @@ import axios from 'axios';
 $nx-color2:#0470B8;
 	.workCards{
 		width: 100%;
+		min-height: 30rem;
 		.workCard{
 			width: 60rem;
 			height: 8rem;

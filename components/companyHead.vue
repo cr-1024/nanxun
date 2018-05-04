@@ -26,8 +26,8 @@
 				<ul>
 					<li :class="{now:'isNow==1'}" @click="send('1',$event)">公司主页</li>
 					<li @click="send('2',$event)">招聘职位</li>
-					<li @click="send('3',$event)">校招职位</li>
-					<li @click="send('4',$event)">公司问答</li>
+					<!-- <li @click="send('3',$event)">校招职位</li>
+					<li @click="send('4',$event)">公司问答</li> -->
 				</ul>
 			</div>
 		</div>
@@ -65,7 +65,7 @@ import axios from 'axios'
 </script>
 
 <style lang="scss">
-@import url("//at.alicdn.com/t/font_631781_4v61w1yz6y74x6r.css");
+@import url("//at.alicdn.com/t/font_631781_uzwcwz6vcmcxr.css");
 $nx-width:68rem;
 $nx-color2:#0470B8;
 .companyHead{
@@ -82,7 +82,6 @@ $nx-color2:#0470B8;
 		width: $nx-width;
 		margin: 0 auto;
 		padding-top: 2rem;
-		background-color: rgba(226,229,255,.5);
 		.chTop{
 			width: 100%;
 			border:1px solid #ddd;
@@ -166,6 +165,7 @@ $nx-color2:#0470B8;
 					display: inline-block;
 					margin-left:2.5rem;
 					padding: 1rem 0;
+					cursor: pointer;
 					font-size: 1.2rem;
 					color:#999;
 					&:first-of-type{
