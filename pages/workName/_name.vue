@@ -13,7 +13,10 @@
 			<img src="https://www.lgstatic.com/www/static/recommend/modules/subscribe/img/subscribe_img_bfa3e18.jpg"  class="adImg1" v-else>
 			
 			<div class="wCard">
-				<workCard :filterValue="$route.params.name" />
+				<workCard :filterValue="$route.params.name " :nowPage="nowPage" @cardNum="allNum" />
+			</div>
+			<div class="bPage">
+				<btnPage @btnPage="toPage" :showBtn="isShow" :allPage="allPage" />
 			</div>
 		</div>
 		<Footer />
@@ -25,6 +28,7 @@ import ScrollTop from '~/components/scrollTop.vue'
 import Top from '~/components/index.vue'
 import Search from '~/components/Search.vue'
 import workCard from '~/components/workCard.vue'
+import btnPage from '~/components/btnpage.vue'
 import Address from '~/components/address.vue'
 import Footer from '~/components/footer.vue'
 export default{
@@ -36,6 +40,9 @@ export default{
 			list:'true',
 			search:this.$route.params.name,
 			wSearch:true,
+			isShow:true,
+			nowPage:1,
+			allPage:1,
 			dataAddressWeb:'https://api.myjson.com/bins/bl9ir',
 			imglist:["https://www.lgstatic.com/i/image/M00/70/F8/CgpFT1o5zBKAHJfyAABQqeBLRaU691.JPG","https://www.lgstatic.com/i/image2/M00/47/8B/CgotOVrZrHuAUyvoAABQCPKhLAY159.PNG","https://www.lgstatic.com/i/image/M00/41/7E/CgpEMllUxC2AOU7wAABZXy04ZTg283.JPG"]
 		}
@@ -45,8 +52,22 @@ export default{
 		Search,
 		Address,
 		workCard,
+		btnPage,
 		ScrollTop,
 		Footer,
+	},
+	methods:{
+		toPage(num){
+			this.nowPage=num;
+		},
+		allNum(num){
+			if(num!=0){
+				this.isShow=true;
+				this.allPage=Math.ceil(num/10);
+			}else{
+				this.isShow=false;
+			}
+		}
 	},
 	mounted(){
 		if(this.search=="all"){
@@ -88,6 +109,10 @@ $nx-width:76.25rem;
 				top:2.3rem;
 			}
 			.wCard{
+				padding-top: 2rem;
+				// padding-bottom: 5rem;
+			}
+			.bPage{
 				padding-top: 2rem;
 				padding-bottom: 5rem;
 			}

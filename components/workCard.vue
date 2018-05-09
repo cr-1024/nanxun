@@ -3,7 +3,7 @@
 		<div class="nodata" v-if="worklist=='暂无数据'">
 			<p>{{worklist}}</p>
 		</div>
-		<div class="workCard" v-for="(work,index) in worklist" :key="index" v-if="worklist!='暂无数据'&&(index<20)" >
+		<div class="workCard" v-for="(work,index) in worklist" :key="index" v-if="worklist!='暂无数据'&&(index<=nowPage*max)&&((nowPage-1)*max<index)" >
 				<div class="card_Up">
 					<div class="crad_left">
 						<div>
@@ -26,7 +26,6 @@
 					<span class="blackc"><a :href="work.cWeb">{{work.cWeb}}</a></span>
 				</div>
 		</div>	
-		
 	</div>
 </template>
 
@@ -37,18 +36,17 @@ import axios from 'axios';
 			return {
 				filterV:this.filterValue,
 				worklist:[],
+				max:10,
 			}
 		},
-		props:['filterValue'],
+		props:['filterValue','nowPage'],
 		created(){
 			let v='';
 			if(this.filterV!='all'){
 				this.filterV=this.filterV.replace(/[\.]/g,'\\.');
 				this.filterV=this.filterV.replace(/[\+]/g,'\\+');
 				v=new RegExp(this.filterV);
-			}
-			
-			
+			}	
 			// 所有职位数据：https://api.myjson.com/bins/twhun
 			axios.get('https://api.myjson.com/bins/twhun')
 			.then(res=>{
@@ -58,7 +56,8 @@ import axios from 'axios';
 				if(this.worklist.length==0){
 					this.worklist="暂无数据";
 				}
-
+				this.allindex=this.worklist.length;
+				this.$emit('cardNum',this.allindex);
 			});
 		},
 		methods:{

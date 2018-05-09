@@ -5,7 +5,7 @@
 				<div>
 					<div class="cardWork_Up">
 						<div>
-							<strong class="card_workNT"><nuxt-link :to="{name:'workName-workEg'}" class="card_workName">{{work.workName}}</nuxt-link><span v-html="work.workTime" class="card_workTime"></span></strong>
+							<strong class="card_workNT"><nuxt-link :to="{name:'workName-workEg'}" class="card_workName" :title="work.workName">{{work.workName}}</nuxt-link><span v-html="work.workTime" class="card_workTime"></span></strong>
 							<span class="card_workMoney">{{work.workMoney}}</span>
 						</div>
 						<span v-for="(exp,index) in work.workExp" :key="index" class="card_workExp" >{{exp}}<i v-if="index<1"> / </i></span>
@@ -14,7 +14,7 @@
 						</ul>
 					</div>
 					<div class="cardWork_Down">
-						<nuxt-link :to="{name:'index'}" class="card_workImg"><img :src="work.workImg"></nuxt-link>
+						<nuxt-link :to="{name:'company-companyEg'}" class="card_workImg"><img :src="work.workImg"></nuxt-link>
 						<div>
 							<span><nuxt-link :to="{name:'company-companyEg'}" class="card_workInc">{{work.workInc}}</nuxt-link></span>
 							<ul>

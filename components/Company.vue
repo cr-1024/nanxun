@@ -16,7 +16,6 @@ import CompanyList from '~/components/CompanyList.vue'
 	export default{
 		components:{
 			CompanyList,
-
 		},
 		data(){
 			return {

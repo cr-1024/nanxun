@@ -1,11 +1,9 @@
 <template>
 	<div>
-		<!-- {{this.$route}} -->
 		<companyHead @whichclick="sendGet" />
 		<companyBodycontain :isType="isNow" />
 	</div>
 </template>
-
 <script>
 import axios from 'axios'
 import companyHead from '~/components/companyHead.vue' 
