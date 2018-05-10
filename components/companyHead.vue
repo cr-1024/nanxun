@@ -1,3 +1,5 @@
+<!-- 公司详情页的主体的头部模块 -->
+<!-- 主要用于概括介绍公司情况 -->
 <template>
 	<div class="companyHead">
 		<div class="companyHeadContain">

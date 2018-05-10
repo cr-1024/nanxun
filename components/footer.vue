@@ -1,3 +1,4 @@
+<!-- 页面的页脚模块（用于显示版权信息） -->
 <template>
 	<div class="footer">
 

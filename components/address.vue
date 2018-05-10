@@ -1,3 +1,5 @@
+<!-- 对数据进行条件筛选，可用于对公司的筛选，也可以用于对职位的筛选
+将筛选条件作为web值传入即可，web值为数据地址，数据结构参考 -->
 <template>
 	<div class="address">
 		<div class="addressContain" id="list" >
@@ -19,7 +21,7 @@ export default{
 		}
 
 	},
-	props:['web','searchwork'],
+	props:['web'],
 	created(){
 			
 			axios.get(this.web)
@@ -59,13 +61,7 @@ export default{
 					}
 				}	
 			}
-		},
-		mounted(){
-			// document.getElementsTagName('span')[0].className='blueBg';
-			// this.$refs.listsort.style.backgroundColor='#0470B8';
-			// this.$refs.listsort.className='blueBg';
 		}
-
 	}
 </script>
 

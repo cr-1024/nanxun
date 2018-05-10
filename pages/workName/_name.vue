@@ -1,3 +1,5 @@
+<!-- 职位列表页 -->
+<!-- 可以是有选择的筛选职位（如点击职位分类中的职位，或者在输入框中输入职位），也可以是通过点击更多进入 -->
 <template>
 	<div class="nameIndex">
 		<ScrollTop />
@@ -5,7 +7,7 @@
 		<Search :nxw="sWidth" :slist="list" :searchValue="$route.params.name" :class="{see:wSearch}" />
 		<div class="nameContains" >
 			<div class="ad"  v-if="!wSearch">
-				<Address :web="dataAddressWeb" :searchwork="$route.params.name" />
+				<Address :web="dataAddressWeb" />
 			</div>
 			<ul class="adImg2" v-if="!wSearch" >
 				<li v-for="(image,index) in imglist" :key="index"><img :src="image" ></li>

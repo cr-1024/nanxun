@@ -1,3 +1,4 @@
+<!-- 职位详情页主体部分的头部模块 -->
 <template>
 	<div class="workHead">
 		<div class="workHeadContain">

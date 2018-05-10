@@ -1,3 +1,4 @@
+<!-- 职位详情页的主体部分的职位描述模块 -->
 <template>
 	<div class="workBody">
 		<div class="bodyContain">

@@ -1,3 +1,4 @@
+<!-- 职位详情页的主体部分 -->
 <template>
 	<div class="workBodycontain">
 		<div class="wbContain">

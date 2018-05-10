@@ -1,10 +1,10 @@
+<!-- 职位详情页的主体部分的面试评价（没有面试评价时） -->
 <template>
 	<div class="workBodyface">
 		<div class="faceTitle">
 			<span>面试评价</span>
 		</div>
-		<div v-if="face.length==0" class="facemain">
-			
+		<div v-if="face.length==0" class="facemain">			
 			<p><i class="iconfont icon-meiyoushuju"></i>该职位尚未收到面试评价，看看该公司<span class="bluecolor">其他职位的面试评价</span></p>
 		</div>
 	</div>

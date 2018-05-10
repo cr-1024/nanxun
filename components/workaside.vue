@@ -1,3 +1,4 @@
+<!-- 职位详情页的侧边栏上部分 -->
 <template>
 	<div class="workaside">
 		<div class="asideTop">

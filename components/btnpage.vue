@@ -1,3 +1,7 @@
+<!-- 分页模块，每次对多显示10条信息 -->
+<!-- 一共传入两个参数，allPage和showBtn -->
+<!-- allPage:所有数据 -->
+<!-- showBtn：是否显示分页模块 值：false/true -->
 <template>
 	<div class="btnPage">
 		<ul v-if="showBtn" id="showBtn">

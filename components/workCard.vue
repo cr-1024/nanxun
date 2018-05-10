@@ -1,3 +1,5 @@
+<!-- 职位列表页的职位卡片模块 -->
+<!-- 用于显示经过筛选后的职位 -->
 <template>
 	<div class="workCards">		
 		<div class="nodata" v-if="worklist=='暂无数据'">

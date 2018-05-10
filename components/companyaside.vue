@@ -1,3 +1,4 @@
+<!-- 公司详情页的主体部分的侧边栏模块 -->
 <template>
 	<div class="companyaside">
 		<div class="caside">

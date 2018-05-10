@@ -1,3 +1,4 @@
+<!-- 首页的公司推荐模块 -->
 <template>
 	<div class="company">
 		<el-tabs v-model="activeCompany" class="companyList"  >

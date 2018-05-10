@@ -1,3 +1,4 @@
+<!-- 首页的职位分类模块 -->
 <template>
 	<div class="nav">
 		<div class="contains">

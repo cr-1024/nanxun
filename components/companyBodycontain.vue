@@ -1,3 +1,4 @@
+<!-- 公司详情页的主体中间部分（包括侧边栏） -->
 <template>
 	<div class="companyBodycontain">
 		<div class="cbContain">

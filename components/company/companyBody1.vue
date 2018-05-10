@@ -1,3 +1,4 @@
+<!-- 公司详情页的主体部分的公司选项显示的模块 -->
 <template>
 	<div class="companybody1">
 		<div class="proTitle ctitle">

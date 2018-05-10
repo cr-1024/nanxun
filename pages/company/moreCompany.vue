@@ -1,3 +1,5 @@
+<!-- 点击公司推荐模块下的更多或者首页旁边的公司进入该页面 -->
+<!-- 用来展示公司信息 -->
 <template>
 	<div class="moreCompany">
 		<ScrollTop />

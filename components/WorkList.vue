@@ -1,3 +1,5 @@
+<!-- 首页职位推荐的职位卡片模块 -->
+<!-- 根据传入的workSort的值显示数据 -->
 <template>
 	<div class="workList">
 		<ul class="work_list">

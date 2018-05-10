@@ -1,3 +1,4 @@
+<!-- 首页 -->
 <template>
   <div id="app">
     <!-- <img src="./assets/imgs/logo/logo.png"> -->

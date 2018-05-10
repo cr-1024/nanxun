@@ -1,0 +1,8 @@
+首页职位推荐：https://api.myjson.com/bins/rgm6z
+首页公司推荐：https://api.myjson.com/bins/df8ir
+首页职位分类：https://api.myjson.com/bins/dzbij
+公司详情页：https://api.myjson.com/bins/6jkpm
+公司列表页以及公司详情页的职位模块信息：https://api.myjson.com/bins/twhun
+职位详情页：https://api.myjson.com/bins/ml5wv
+
+iconfont://at.alicdn.com/t/font_631781_uzwcwz6vcmcxr.css

@@ -1,3 +1,4 @@
+<!-- 首页搜素框模块 -->
 <template>
 	<div class="searchIndex" >
 		<div class="contains" :width="nxw">

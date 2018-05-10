@@ -1,3 +1,4 @@
+<!-- 公司详情页的主体部分 -->
 <template>
 	<div>
 		<companyHead @whichclick="sendGet" />

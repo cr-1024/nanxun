@@ -1,3 +1,4 @@
+<!-- 公司详情页的主体部分的职位选项显示的模块 -->
 <template>
 	<div class="companyBody2">
 		<div class="companyWorkList">

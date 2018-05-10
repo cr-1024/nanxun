@@ -1,3 +1,4 @@
+<!-- 首页公司推荐的公司卡片模块 -->
 <template>
 	<div class="hotCompany">
 		<ul class="companyContain">
