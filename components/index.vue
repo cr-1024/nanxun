@@ -78,6 +78,7 @@
 
 @import url('//at.alicdn.com/t/font_631781_uzwcwz6vcmcxr.css');
 $nx-color:#449EFE;
+$nx-color2:#0470B8;
 $all-padding:0;
 $nx-width:76.25rem;
 .left{
@@ -104,7 +105,7 @@ $nx-width:76.25rem;
         float:left;
         line-height: 2rem;
         font-size: 1.3rem;
-        color:$nx-color;
+        color:$nx-color2;
       }
       li{
         float: left;
@@ -116,7 +117,7 @@ $nx-width:76.25rem;
           color: #aaa;
         }
         .lgstyle{
-          color:$nx-color;
+          color:$nx-color2;
         }
       }
 
@@ -148,7 +149,7 @@ $nx-width:76.25rem;
       span{
         float: right;
         display: inline-block;
-        line-height: 90px;
+        line-height: 80px;
         margin-left: 5px;
       }
     }
@@ -160,7 +161,7 @@ $nx-width:76.25rem;
         margin:20px;
         padding:0 6px 11px;
         &.now,&:hover{
-          border-bottom: 2px solid #3CBEF9;
+          border-bottom: 2px solid $nx-color2;
         }
       }
     }

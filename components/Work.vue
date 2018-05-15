@@ -4,7 +4,7 @@
 		<div class="contains">
 			<el-tabs v-model="activeWork" class="post">
 				<el-tab-pane name="commend" >
-					<span slot="label" :class="{'fontSize':true}">推荐职位 </span>
+					<span slot="label" :class="{'fontSize':true}" color="#0470B8">推荐职位 </span>
 					<WorkList  :workSort="work.commendWork" />
 				</el-tab-pane >
 				<el-tab-pane name="hot" >

@@ -4,6 +4,9 @@
 	<div class="moreCompany">
 		<ScrollTop />
 		<Top :isnow="2" />
+		<div class="nav">
+			<companyNav />
+		</div>
 		<div class="ad">
 			<Address :web="dataAddressWeb"  />
 		</div>
@@ -19,6 +22,7 @@ import Top from '~/components/index.vue'
 import Footer from '~/components/footer.vue'
 import Address from '~/components/address.vue'
 import Company from '~/components/CompanyList.vue'
+import companyNav from '~/components/companyNav.vue'
 import axios from 'axios'
 	export default{
 		data(){
@@ -38,6 +42,7 @@ import axios from 'axios'
 			Footer,
 			Address,
 			Company,
+			companyNav,
 		},
 		created(){
 			axios.get(this.dataCompanyWeb)
@@ -50,7 +55,14 @@ import axios from 'axios'
 </script>
 
 <style lang="scss">
+$nx-color:#449EFE;
+$nx-color2:#0470B8;
 	.moreCompany{
+		.nav{
+			width: 100%;
+			box-shadow: 0 -1px 0 0px $nx-color2;
+			background-color: $nx-color2;
+		}
 		.ad{
 			width: 60rem;
 			margin:0 auto;
