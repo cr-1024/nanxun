@@ -67,6 +67,7 @@
 						}
 					}
 					.search_input{
+						height:19px;
 						padding: 16px;
 						font-size: 16px;
 						border-right: none;
