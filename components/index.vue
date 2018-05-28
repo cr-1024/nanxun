@@ -27,7 +27,7 @@
 	    <div id="headnav" >
 	      <div class="contains">
 	        <div class="logo left">
-	          <img src="~/static/logo/logo2.png" class="logoimg">
+	          <img src="~static/logo/logo2.png" class="logoimg">
 	          <span class="ads">全国站</span>
 	        </div>
 	        <ul class="navlist" id="navNum">

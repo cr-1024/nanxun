@@ -1,6 +1,6 @@
 <!-- 首页的职位分类模块 -->
 <template>
-	<div class="nav">
+	<div class="Nav">
 		<div class="contains">
 				<div class="nav-left" >
 				
@@ -36,7 +36,7 @@ import axios from 'axios';
 				wName:[],
 				overList:false,
 				outList:true,
-				imglist:["https://i1.mifile.cn/f/i/17/hr/hr_banner_20180310.png","http://zhaopin.jd.com/htmlPages/JD/picLink/16F265F8D9DBD37B.jpg","http://sf-express.zhaopin.com/images/banner.jpg"]
+				imglist:["https://i1.mifile.cn/f/i/17/hr/hr_banner_20180310.png","http://img2.pingan.com/app_series/pingancn/assets/img/join/propagandize2.png","http://sf-express.zhaopin.com/images/banner.jpg"]
 			}
 		},
 		created:function(){
@@ -56,7 +56,7 @@ import axios from 'axios';
 $nx-color:#449EFE;
 $all-padding:0;
 	
-	.nav{
+	.Nav{
 		width: 100%;
 		height: 29rem;
 		.contains{

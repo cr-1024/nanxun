@@ -4,7 +4,7 @@
 		<div class="contains" :width="nxw">
 			<div class="search">
 				<div class="s_box">					
-					<input type="text" name="" class="search_input" tabindex="1" maxlength="64" autocomplete="off" placeholder="搜索职位、公司或地点" v-model="search">
+					<input type="text" name="" class="search_input" tabindex="1" maxlength="64" autocomplete="off" placeholder="搜索职位、公司或地点" v-model="search" >
 					<nuxt-link :to="{name:'workName-name',params:{name:search}}"><input type="sublime" name="" class="search_button" value="搜索" readonly="true"></nuxt-link>	
 				</div>
 				<div class="s_hot" :class="{nosee:list}">
@@ -77,12 +77,13 @@
 					}
 					.search_button{
 						width: 8rem;
+						height: 51px;
 						font-size: 20px;
 						line-height: 51px;
 						text-align: center;
 						cursor: pointer;
-						color: #fff;				
-						border-color:#3CBEF9;
+						color: #fff;	
+						border:1px solid #3CBEF9;			
 						background: #3CBEF9;
 					}
 				}

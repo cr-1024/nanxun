@@ -63,7 +63,7 @@ export default{
 			this.nowPage=num;
 		},
 		allNum(num){
-			if(num!=0){
+			if(num>10){
 				this.isShow=true;
 				this.allPage=Math.ceil(num/10);
 			}else{

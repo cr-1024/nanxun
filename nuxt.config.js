@@ -15,7 +15,7 @@ module.exports = {
       
     ]
   },
-  css:[{src:'~/assets/css/reset.scss',lang:'scss'},
+  css:[{src:'~assets/css/reset.scss',lang:'scss'},
     'element-ui/lib/theme-chalk/index.css'],
 
   plugins:[{src:'~plugins/element-ui',ssr:true}],

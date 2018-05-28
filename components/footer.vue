@@ -3,7 +3,7 @@
 	<div class="footer">
 
 		<div class="footerContain">
-			<img src="~/static/logo/footerlogo.png"> 
+			<img src="~static/logo/footerlogo.png"> 
 			<div class="footeright">
 				<span v-for="(list,index) in lists" :key="index">{{list}}</span>
 		

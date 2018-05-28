@@ -37,9 +37,9 @@ import WorkList from '~/components/WorkList.vue'
 			}
 		},
 		methods:{
-			handleEvent(){
-				bus.$emit('w-search','false');
-			}
+			// handleEvent(){
+			// 	bus.$emit('w-search','false');
+			// }
 		},
 		created:function(){
 			// 职位 work

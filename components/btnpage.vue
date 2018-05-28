@@ -3,7 +3,7 @@
 <!-- allPage:所有数据 -->
 <!-- showBtn：是否显示分页模块 值：false/true -->
 <template>
-	<div class="btnPage">
+	<div class="btnPage" >
 		<ul v-if="showBtn" id="showBtn">
 			<li id="lt" @click="cutPage">&lt;</li>
 			<li v-for="item in allPage" :key="item" @click="turnPage(item)">{{item}}</li>
@@ -16,6 +16,7 @@ export default{
 	data(){
 		return{
 			nowPage:'1',
+			show:false,
 		}
 	},
 	props:['allPage','showBtn'],

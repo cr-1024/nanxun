@@ -71,7 +71,9 @@ import axios from 'axios'
 			axios.get("https://api.myjson.com/bins/12n2pe")
 			.then(res=>{
 				this.faces=res.data;
+				this.faces.face=["4.1","3.2","4.3","4.1"];
 			})
+
 		}
 	}
 </script>
